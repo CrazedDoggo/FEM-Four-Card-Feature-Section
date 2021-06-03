@@ -26,6 +26,7 @@ body {
     background-color: var(--light-gray);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: .9375rem;
+    line-height: 1.7;
 }
 
 /* TYPOGRAPHY || */
@@ -67,7 +68,7 @@ figure {
 }
 figure img {
     display: block;
-    margin: 1em 0 0 auto;
+    margin: 3em 0 0 auto;
 }
 
 .supervisor {
