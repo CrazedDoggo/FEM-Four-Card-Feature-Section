@@ -43,6 +43,7 @@ h1 {
     font-weight: 200;
     font-size: 1.5rem;
     margin-bottom: .8em;
+    line-height: 1.4;
 }
 
 p, 
@@ -52,6 +53,8 @@ figcaption {
 
 .main__text {
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* COMPONENTS || */
@@ -88,6 +91,7 @@ figure img {
 
 main {
     margin: 4em 2em;
+    max-width: 1200px;
     display: grid;
     gap: 5em;
 }
@@ -95,6 +99,34 @@ main {
 .cards {
     display: grid;
     gap: 2em;
+}
+
+/* QUERIES || */
+
+@media(min-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "supervisor team-builder calculator"
+        "supervisor karma calculator";
+    }
+    .supervisor {
+        grid-area: supervisor;
+    }
+    .team-builder {
+        grid-area: team-builder;
+    }
+    .karma {
+        grid-area: karma;
+    }
+    .calculator {
+        grid-area: calculator;
+    }
 }
 
 /* ATTRIBUTION || */
