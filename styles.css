@@ -1,16 +1,107 @@
+/* GENERAL || */
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-gray);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: .9375rem;
+}
+
+/* TYPOGRAPHY || */
+
+h1, 
+h2 {
+    color: var(--dark-blue);
+}
+strong,
+h2 {
+    font-weight: 600;
+}
+h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: .8em;
+}
+
+p, 
+figcaption {
+    color: var(--grayish-blue);
+}
+
+.main__text {
+    text-align: center;
+}
+
+/* COMPONENTS || */
+
+figure {
+    padding: 2em;
+    border-top: 5px solid black;
+    box-shadow: 
+    8px 6px 5px -5px var(--grayish-blue),
+    -5px 6px 5px -5px var(--grayish-blue)
+    ;
+    background-color: white;
+    border-radius: 5px;
+}
+figure img {
+    display: block;
+    margin: 1em 0 0 auto;
+}
+
+.supervisor {
+    border-color: var(--cyan);
+}
+.team-builder {
+    border-color: var(--red);
+}
+.karma {
+    border-color: var(--orange);
+}
+.calculator {
+    border-color: var(--blue);
+}
+
+/* LAYOUT || */
+
+main {
+    margin: 4em 2em;
+    display: grid;
+    gap: 5em;
+}
+
+.cards {
+    display: grid;
+    gap: 2em;
+}
+
 /* ATTRIBUTION || */
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin: 1em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
-/* GENERAL || */
-
-/* TYPOGRAPHY || */
-
-/* COMPONENTS || */
-
-/* LAYOUT || */

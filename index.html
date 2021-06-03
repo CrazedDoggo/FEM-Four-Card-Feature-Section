@@ -5,31 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+  </style> 
   
   <title>Frontend Mentor | Four card feature section</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+  <main>
+    <div class="main__text">
+      <h1>
+        Reliable, efficient delivery
+        <br>
+        <strong>Powered by Technology</strong>
+      </h1>
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</p>
+    </div>
+    <section class="cards">
+      <figure class = "supervisor">
+        <h2>Supervisor</h2>
+        <figcaption>Monitors activity to identify project roadblocks</figcaption>
+        <img src="images/icon-supervisor.svg" alt="Magnifying glass">
+      </figure>
+      <figure class = "team-builder">
+        <h2>Team Builder</h2>
+        <figcaption>Scans our talent network to create the optimal team for your project</figcaption>
+        <img src="images/icon-team-builder.svg" alt="Webpage with red house icon infront">
+      </figure>
+      <figure class = "karma">
+        <h2>Karma</h2>
+        <figcaption>Regularly evaluates our talent to ensure quality</figcaption>
+        <img src="images/icon-karma.svg" alt="Lightbulb with one gear inside">
+      </figure>
+      <figure class = "calculator">
+        <h2>Calculator</h2>
+        <figcaption>Uses data from past projects to provide better delivery estimates</figcaption>
+        <img src="images/icon-calculator.svg" alt="Desktop display with blue symbols">
+      </figure>
+    </section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
