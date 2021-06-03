@@ -62,10 +62,11 @@ figcaption {
 figure {
     padding: 2em;
     border-top: 5px solid black;
-    box-shadow: 
+    /* box-shadow: 
     8px 6px 5px -5px var(--grayish-blue),
     -5px 6px 5px -5px var(--grayish-blue)
-    ;
+    ; */
+    box-shadow: 2px 8px 15px -5px var(--grayish-blue);
     background-color: white;
     border-radius: 5px;
 }
